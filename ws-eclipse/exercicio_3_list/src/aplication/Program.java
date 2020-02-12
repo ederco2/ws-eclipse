@@ -19,7 +19,7 @@ public class Program {
 		list.add(1, "Josi");
 		list.remove(2);
 		
-		list.removeIf(x -> x.charAt(0) == 'M');	
+		list.removeIf(x -> x.charAt(0) == 'J');	
 		
 		
 		System.out.println(list.size());

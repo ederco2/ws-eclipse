@@ -1,0 +1,38 @@
+package aplication;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Rooms;
+
+public class Program {
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Quantos quartos precisa?");
+		
+		int n = sc.nextInt();
+		
+		Rooms[] quarto = new Rooms[10];
+		
+		for (int i = 0; i < n; i++) {
+			sc.nextLine();
+			int room = sc.nextInt();		
+			String name = sc.nextLine();			
+			String email = sc.nextLine();			
+			quarto[i]= new Rooms(name, email, room);
+	
+		}		
+		
+		for (int i = 0; i < 10; i++) {
+			if (quarto[i] != null){
+				System.out.println(quarto[i].toString());
+			}
+		}
+		
+		sc.close();
+	}
+
+}

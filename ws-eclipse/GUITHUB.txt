@@ -1,0 +1,39 @@
+--------------------------------------------------------
+
+GITBUH
+
+Comandos:
+git config --list : verifica usuario
+git config --global user.name "Eder Oliveira"
+git config --global user.email "ederco2@gmail.com"
+
+git init
+git remote add origin https://github.com/ederco2/meu-primeiro-projeto
+
+git pull origin atualiza o repositorio (sincronização)
+
+git add . -> adiciona os arquivos
+
+git status - COMANDO para ver a situação dos arquivos
+git log - 
+
+git commit -m "Versao Inicial do Projeto" ->
+
+git push origin master -> envia ao repositorio web GIThub.com
+
+git push -f origin master = forçou o upload para o github!!!
+
+
+-------------------------------------------------
+TRABALHAR COM PROJETO EXISTENTE
+-------------------------------------------------
+git clone  url - para baixar o projeto do github
+
+git clone https://github.com/ederco2/ws-eclipse.git
+
+----------------------
+Voltar (até o ultimo commit) antes de alterações
+----------------------
+git cleah -df
+git checkou --. 
+------------------------

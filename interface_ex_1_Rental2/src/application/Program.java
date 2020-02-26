@@ -26,8 +26,10 @@ public class Program {
 		System.out.println("Enter a Rental data");
 		System.out.print("Car model:");
 		String carModel = sc.nextLine();
+		
 		System.out.print("Pickup (dd/MM/YYY hh:ss): ");
 		Date start = sdf.parse(sc.nextLine());
+		
 		System.out.print("Return (dd/MM/yyyy hh:ss): ");
 		Date finish = sdf.parse(sc.nextLine());
 		
